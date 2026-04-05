@@ -34,7 +34,7 @@ queue index, depending on the message size (see
 `queue_index_embed_msgs_below`).
 
 Internally the `variable_queue` keeps messages on four `queue` data
-structures. They are a variation of erlang's _queue_ module, but which
+structures. They are a variation of erlang's _queue_ module, but with
 some extensions that allow getting the queue length in constant
 time. These four queues are identified on the variable queue state as
 `q1`, `q2`, `q3` and `q4`. The need for these four queues becomes
